@@ -1,0 +1,133 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+  /* Primary */
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+
+  /* Neutral */
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+  /* Gradients */
+  --Lighter: hsl(0, 0%, 100%);
+  --Lighter2: hsl(0, 100%, 98%);
+  --Darker: hsl(0, 80%, 86%);
+  --Darker2: hsl(0, 74%, 74%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-container {
+  display: block;
+  width: 55%;
+  padding: 0 200px 0 180px;
+}
+
+.apparel {
+  margin: 80px 0 70px 0;
+  width: 180px;
+}
+
+span {
+  color: var(--Desaturated-Red);
+  font-weight: 300;
+}
+
+h1 {
+  color: var(--Dark-Grayish-Red);
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+
+p {
+  color: var(--Desaturated-Red);
+  line-height: 25px;
+}
+
+form {
+  position: relative;
+}
+
+input {
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--Desaturated-Red);
+  font-weight: 400;
+  margin: 20px 0 10px 0;
+  width: 100%;
+  height: 56px;
+  border-radius: 28px;
+  font-size: 15px;
+  padding: 15px 32px;
+  border: 1px solid var(--Desaturated-Red);
+  background: transparent;
+  outline: none;
+}
+
+.alert-text {
+  display: none;
+  color: var(--Soft-Red);
+  margin-left: 33px;
+}
+
+.alert-text.visible {
+  display: block;
+}
+
+.error-icon {
+  display: none;
+  margin: 20px 0;
+  position: absolute;
+  top: 15px;
+  right: 124px;
+}
+
+.error-icon.visible {
+  display: block;
+}
+
+button {
+  margin: 20px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, var(--Darker), var(--Darker2));
+  height: 56px;
+  width: 20%;
+  border-radius: 28px;
+  border: none;
+  box-shadow: 2px 4px 8px var(--Darker);
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  transition: 280ms ease-in-out;
+  filter: brightness(115%);
+}
+
+.right-container {
+  background-image: url('images/hero-desktop.jpg');
+  background-size: cover;
+  background-position: center center;
+  width: 45%;
+}
+
+/* Phones */
+@media only screen and (max-width: 600px) {
+}
